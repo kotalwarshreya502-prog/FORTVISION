@@ -16,20 +16,24 @@
         <span class="brand-title">FORT<span>VISION</span></span>
         <span class="brand-tagline">Maharashtra Fort Heritage</span>
       </a>
-      
-      <!-- Pure CSS Mobile Navigation Toggle (Zero JavaScript) -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
-      <label for="nav-toggle" class="nav-toggle-btn" title="Navigation Menu">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </label>
 
-      <nav class="nav-menu">
+      <!-- Mobile Menu Open Button (:target based pure HTML/CSS) -->
+      <a href="#nav-drawer" class="nav-open-btn" aria-label="Open Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </a>
+
+      <!-- Navigation Drawer (Automatically closes on link click via CSS :target) -->
+      <nav id="nav-drawer" class="nav-menu">
+        <div class="nav-drawer-header">
+          <span class="drawer-title">FORT NAVIGATION</span>
+          <a href="#close" class="nav-close-btn" aria-label="Close Navigation">&times;</a>
+        </div>
         <ul class="nav-links">
           <li><a href="#home" class="nav-link">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#forts" class="nav-link">Forts</a></li>
+          <li><a href="#forts" class="nav-link">Forts (12)</a></li>
           <li><a href="#ancient-engineering" class="nav-link">Ancient Eng.</a></li>
           <li><a href="#modern-engineering" class="nav-link">Modern Eng.</a></li>
           <li><a href="#iks" class="nav-link">IKS</a></li>
@@ -41,6 +45,24 @@
           <li><a href="#survey" class="nav-link">Survey</a></li>
         </ul>
       </nav>
+    </div>
+
+    <!-- Mobile Quick-Access Category Scrollbar (One-Touch Thumb Navigation) -->
+    <div class="mobile-quick-nav">
+      <div class="quick-nav-track">
+        <a href="#home" class="quick-pill">Home</a>
+        <a href="#about" class="quick-pill">About</a>
+        <a href="#forts" class="quick-pill">Forts</a>
+        <a href="#ancient-engineering" class="quick-pill">Ancient Eng.</a>
+        <a href="#modern-engineering" class="quick-pill">Modern Eng.</a>
+        <a href="#iks" class="quick-pill">IKS</a>
+        <a href="#timeline" class="quick-pill">Timeline</a>
+        <a href="#conservation" class="quick-pill">Conservation</a>
+        <a href="#unesco" class="quick-pill">UNESCO</a>
+        <a href="#gallery" class="quick-pill">Gallery</a>
+        <a href="#observation" class="quick-pill">Audit Form</a>
+        <a href="#survey" class="quick-pill">Survey</a>
+      </div>
     </div>
   </header>
 
